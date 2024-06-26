@@ -1,0 +1,91 @@
+.proper-procedures-container {
+  display: flex;
+  flex-direction: column;
+  Font-family: Georgia, serif;
+  color: white; 
+  background-color: #1B2625;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.proper-procedures-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+}
+
+.proper-procedures-header h1 {
+  margin: 50px;
+  font-size: 90px; 
+  text-align: center;
+  flex-grow: 1; 
+}
+
+.proper-procedures-content-container {
+  display: flex;
+  flex-grow: 1; 
+  border: 4px solid #E2C274;
+  height: 800px;
+
+}
+
+.proper-procedures-sidebar-container {
+  flex-basis: 20%; 
+  padding: 1rem;
+  background-color: #010b11; 
+  border-right: 6px solid #E2C274;
+  border-bottom: 4px solid #E2C274;
+  border-top: 4px solid #E2C274;
+  width: 400px;
+}
+
+.proper-procedures-sidebar-container h3 {
+  color: gold; 
+  font-size: 50px;
+}
+
+.proper-procedures-video-contents {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proper-procedures-video-contents li {
+  background: #1c1c1c; 
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid #E2C274;
+  cursor: pointer;
+  width: 300px;
+}
+
+.proper-procedures-video-wrapper {
+  flex-basis: 80%; /* Video takes up 80% of the space */
+}
+
+.proper-procedures-video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none; 
+}
+
+@media (max-width: 768px) { 
+  .proper-procedures-content-container {
+    flex-direction: column; 
+  }
+
+  .proper-procedures-sidebar-container,
+  .proper-procedures-video-wrapper {
+    flex-basis: 100%; 
+    height: 100%;
+    width: 100%; 
+  }
+
+  .proper-procedures-video-wrapper iframe {
+    height: auto; 
+  }
+}

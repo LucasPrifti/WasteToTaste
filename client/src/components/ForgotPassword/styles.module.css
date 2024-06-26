@@ -1,0 +1,138 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../Photos/SignupForm.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form_container {
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+    padding: 20px;
+    background-image: url('../../Photos/Cuttingboard.webp');
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    transition: all 0.1s ease-in-out;
+    border: 5px solid #ffda43
+}
+.form_container h1 {
+    font-size: clamp(20px, 1.5vw, 40px);
+    margin-top: 0;
+    color: #f2f2f2;
+    font-weight: bold;
+    background-color: #1b2625;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    max-width: 85%;
+    margin-bottom: 30px;
+
+}
+
+.form_container h2 {
+    font-size: clamp(15px, 1.2vw, 35px); /* Adjusted to ensure it's always smaller than h1 */
+    margin-top: 0;
+    font-weight: bold;
+    color: #f2f2f2;
+    background-color: #1b2625;
+    padding: 6px 12px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+
+}
+.input {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #edf5f3;
+    font-size: 14px;
+}
+
+.white_btn, .green_btn {
+    border: none;
+    padding: clamp(5px, 1vw, 20px);
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: clamp(14px, 1.5vw, 16px);
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 0;
+    width: auto;
+    min-width: 150px;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.green_btn:hover, .white_btn:hover {
+  
+        color: #000;
+            background-color: #E2C274;
+            border-color: #E2C274;
+    
+      
+}
+
+.error_msg {
+    width: 90%;
+    max-width: 370px;
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 17px;
+    background-color: #7b0909;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.success_msg {
+    padding: 6px 12px;
+    margin: 5px 0;
+    font-size: clamp(15px, 1.2vw, 27px); /* Adjusted to ensure it's always smaller than h1 */
+    background-color: #025214;
+    width: fit-content;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .form_container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .input, .error_msg, .success_msg {
+        width: calc(100% - 30px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form_container {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .form_container {
+        max-width: 500px;
+    }
+
+    .white_btn, .green_btn {
+        padding: 15px 45px;
+        font-size: 18px;
+    }
+}

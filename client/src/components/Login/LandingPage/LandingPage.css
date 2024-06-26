@@ -1,0 +1,352 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.landing-header .landing-logo {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.landing-container {
+    position: relative;
+    text-align: center;
+    background-image: url('../../../Photos/LandingPage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.auth-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+
+.header-overlay-box {
+    backdrop-filter: blur(10px);
+    background-color: #1b2625;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+                0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.landing-header h1, .landing-header p {
+    color: #f2f2f2;
+    background-color: #1b2625;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: bold;
+    margin: auto;
+    font-family: georgia, serif;
+}
+
+.landing-header h1 {
+    font-size: clamp(35px, 2.7vw, 80px);
+    margin-bottom: 1.5rem;
+    
+}
+
+.landing-header p {
+    font-size: clamp(20px, 1.5vw, 30px);
+    margin-bottom: 2rem;
+}
+
+.landing-btn {
+    border: none;
+    outline: none;
+    padding: clamp(5px, 1vw, 20px);
+    background-color: #02490a;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: clamp(14px, 1.5vw, 16px);
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    min-width: 0px;
+}
+
+.landing-btn:hover {
+    background-color: #006900;
+}
+
+.overlay-box {
+    backdrop-filter: blur(10px);
+    background-color: #1b2625;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+                0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+    text-align: left;
+}
+
+.info-section h2, .info-section p {
+    color: #f2f2f2;
+    background-color: #1b2625;
+    padding: 6px 12px;
+    border-radius: 4px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.landing-header, .landing-header h1, .landing-header p, .landing-header .mission-statement {
+    word-wrap: break-word;
+}
+.info-section h2 {
+    font-size: clamp(30px, 1.5vw, 40px);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: georgia, serif;
+}
+.info-section h3 {
+    margin-top: 3.5rem;
+    text-align: center;
+    font-family: georgia, serif;
+}
+.info-section h4{
+    text-align: center;
+    font-family: georgia, serif;
+}
+
+.info-section p {
+    font-size: clamp(14px, 1vw, 16px);
+    text-align: center;
+    
+}
+
+.landing-header .mission-statement {
+    font-size: clamp(16px, 1.2vw, 16px);
+    margin-bottom: 1rem;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+background-color: #1b2625;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 600px) {
+    .header-overlay-box {
+        padding: 10px;
+        margin: 1rem auto;
+    }
+    .landing-header .landing-logo {
+        width: 150px; 
+    }
+    .landing-header h1 {
+        font-size: 1.7rem;
+    }
+    .landing-header p, .landing-header .mission-statement {
+        font-size: smaller;
+    }
+    .landing-btn {
+        padding: 8px 20px;
+        font-size: 14px; 
+    }
+    .info-section h2 {
+        font-size: 1.4rem;
+    }
+    .info-section h3 {
+        font-size: 1.2rem;
+    }
+    .info-section h4 {
+        font-size: 1rem;
+    }
+    .info-section p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 600px) { 
+    
+    .info-section h2 {
+        font-size: 1.6rem;
+    }
+    .info-section h3 {
+        font-size: 1.4rem;
+    }
+    .info-section h4 {
+        font-size: 1.2rem;
+    }
+    .info-section p {
+        font-size: 1rem;
+    }
+    .landing-header h1 {
+        font-size: 2rem; 
+    }
+    .landing-header p {
+        font-size: 1.4rem; 
+    }
+    .landing-header .mission-statement {
+        font-size: 1.1rem; 
+    }
+    .info-section ul li {
+        font-size: 1rem;
+    }
+    
+    .landing-logo {
+        width: 180px;
+    }
+    .landing-btn {
+        padding: 10px 32px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-overlay-box, .overlay-box {
+        max-width: 90%;
+        margin: 2rem auto;
+        padding: 10px;
+    }
+    .info-section ul li {
+        font-size: 1.2rem;
+    }
+    .landing-header h1 {
+        font-size: 2.2rem; 
+    }
+    .landing-header p {
+        font-size: 1.6rem; 
+    }
+    .landing-header .mission-statement {
+        font-size: 1.2rem; 
+    }
+    .landing-btn {
+        padding: 12px 40px;
+        font-size: 18px;
+    }
+    .info-section h2 {
+        font-size: 1.8rem;
+    }
+    .info-section h3 {
+        font-size: 1.6rem;
+    }
+    .info-section h4 {
+        font-size: 1.4rem;
+    }
+    .info-section p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (min-width: 992px) { 
+    .landing-header, .info-section {
+        font-size: calc(1rem + 1.5vw);
+    }
+    .landing-header h1 {
+        font-size: 2.8rem; 
+    }
+    .info-section ul li {
+        font-size: 1.25rem;
+    }
+    .landing-header p {
+        font-size: 1.8rem; 
+    }
+    .landing-header .mission-statement {
+        font-size: 1.2rem; 
+    }
+    .landing-logo {
+        width: 220px;
+    }
+    .landing-btn {
+        padding: 15px 50px;
+        font-size: 20px;
+    }
+    .auth-buttons {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    .info-section h2 {
+        font-size: 2rem;
+    }
+    .info-section h3 {
+        font-size: 1.8rem;
+    }
+    .info-section h4 {
+        font-size: 1.6rem;
+    }
+    .info-section p {
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .landing-header h1 {
+        font-size: 4rem;
+    }
+    .landing-btn {
+        padding: 15px 55px;
+        font-size: 20px;
+    }
+    .landing-logo {
+        width: 240px;
+    }
+    .header-overlay-box, .overlay-box {
+        max-width: 70%;
+    }
+    .landing-container, .overlay-box {
+        padding: 2rem;
+    }
+    .info-section ul li {
+        font-size: 1.3rem;
+    }
+ 
+    .landing-header p {
+        font-size: 2rem; 
+    }
+    .landing-header .mission-statement {
+        font-size: 1.3rem; 
+    }
+    .info-section h2 {
+        font-size: 2.2rem;
+    }
+    .info-section h3 {
+        font-size: 2rem;
+    }
+    .info-section h4 {
+        font-size: 1.8rem;
+    }
+    .info-section p {
+        font-size: 1.3rem;
+    }
+}

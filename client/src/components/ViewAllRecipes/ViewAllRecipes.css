@@ -1,0 +1,292 @@
+/*//////////////////////////////////*/
+/*ViewAllRecipes.css*/
+/*//////////////////////////////////*/
+/*//////////////////////////////////*/
+/*MAIN BODY*/
+/*//////////////////////////////////*/
+.ViewAll-container {
+  Font-family: Georgia, serif;
+  padding: 20px;
+  background-color: #1B2625;
+  color: #fff;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+/*//////////////////////////////////*/
+/*MAIN TITLE*/
+/*//////////////////////////////////*/
+.ViewAll-container h1{
+  padding: 20px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 90px;
+  text-align: center;
+}
+
+/*////////////////////////// */
+/* NOTIFICATION POP-UP*/
+/*////////////////////////// */
+.ViewAll-recipe-notification-container {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1E1F20;
+  color: white;
+  padding: 20px;
+  border: 4px solid #CEB174;
+  border-radius: 8px;
+  z-index: 1000; 
+  text-align: center;
+}
+.ViewAll-recipe-notification-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #1E1F20;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/*//////////////////////////////////*/
+/*SEARCH BAR*/
+/*//////////////////////////////////*/
+.ViewAll-search-input {
+  Font-family: Georgia, serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  border: 4px solid #E2C274;
+}
+/*//////////////////////////////////*/
+/*SORT BUTTON*/
+/*//////////////////////////////////*/
+.ViewAll-sort-select {
+  margin-left: 10px; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 4px solid white;
+  background-color: #E2C274;
+  color: White;
+  font-size: 20px;
+  font-weight: bold; 
+}
+/*///////////*/
+/*TAG BUTTONS*/
+/*///////////*/
+.ViewAll-tag-filter {
+  Font-family: Georgia, serif;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.ViewAll-tag-button {
+  Font-family: Georgia, serif;
+  background-color: #b09647;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 25px;
+  transition: background-color 0.3s ease; 
+}
+.ViewAll-tag-button.active, .tag-button:hover {
+  background-color: #5e5025; 
+  color: #fff; 
+}
+.ViewAll-tag-button:hover {
+  background-color: #f9db82; 
+}
+
+/*//////////////////////////////////*/
+/*RECIPE CARD POSITIONS*/
+/*//////////////////////////////////*/
+.ViewAll-recipes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/*//////////////////////////////////*/
+/*RECIPE CARD OVERALL*/
+/*//////////////////////////////////*/
+.ViewAll-recipe-card {
+  width: auto; 
+  min-width: 300px;
+  max-width: 700px;
+  height: auto;
+  min-height: 500px;
+  max-height: 900px;  
+  margin: 20px; 
+  background-color: #010b11; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+  align-items: center; 
+  padding: 1rem;
+  height: 100%;
+  width: calc(20% - 1rem); 
+  margin-bottom: 2rem; 
+  text-align: center;
+  border: 3px solid #E2C274; 
+  border-radius: 10px; 
+}
+
+/*//////////////////////////////////*/
+/*RECIPE CARD TITLE*/
+/*//////////////////////////////////*/
+.ViewAll-recipe-card-title{
+  font-size: 35px;
+  margin-bottom: 3rem;
+  height: 120px;
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex-direction: column; 
+  justify-content: center
+}
+/*//////////////////////////////////*/
+/*RECIPE CARD VIEW RECIPE BUTTON*/
+/*//////////////////////////////////*/
+.ViewAll-view-recipe {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.ViewAll-view-recipe:hover {
+  background-color: #218838;
+}
+
+/*//////////////////////////////////*/
+/*RECIPE CARD DESCRIPTION*/
+/*//////////////////////////////////*/
+.ViewAll-recipe-description{
+  font-size: 17px;
+  flex-grow: 1;
+  display: flex;
+  color: white;
+  background: #1c1c1c; 
+  border: 3px solid #9cA8B5; 
+  border-radius: 10px; 
+  padding: 20px;
+  cursor: pointer;
+
+}
+.ViewAll-recipe-description:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+/*//////////////////////////////////*/
+/*RECIPE CARD TAGS*/
+/*//////////////////////////////////*/
+.ViewAll-recipe-tags-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column; 
+  height: 240px; 
+}
+.ViewAll-tag {
+  display: inline-block;
+  background: #b09647;
+  color: white;
+  margin: 0 5px 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+}
+.ViewAll-tag.placeholder {
+  visibility: hidden; 
+}
+
+/*//////////////////////////////////*/
+/*RECIPE CARD SHARE BUTTON*/
+/*//////////////////////////////////*/
+.ViewAll-share-button {
+  display: inline-block;
+  background: #218838;
+  color: white;
+  margin: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.ViewAll-share-button:hover {
+  background-color: #91BA96;
+}
+
+/*//////////////////////////////////*/
+/*RECIPE CARD ALLERGEN INFO*/
+/*//////////////////////////////////*/
+.ViewAll-recipe-allergens {
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+.ViewAll-allergen, .ViewAll-allergen-free {
+  display: inline-block;
+  background: #d9534f; 
+  color: #fff;
+  margin: 0 5px 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.ViewAll-allergen-free {
+  background: #5cb85c; 
+}
+
+
+.loading, .error {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+
+@media (max-width: 768px) {
+  .ViewAll-recipe-card {
+    width: calc(50% - 10px);
+  }
+
+  .ViewAll-search-input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ViewAll-recipe-card {
+    width: 100%;
+  }
+
+  .ViewAll-search-input {
+    width: 80%;
+  }
+}
+
+
+

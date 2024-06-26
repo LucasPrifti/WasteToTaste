@@ -1,0 +1,160 @@
+/*Foodlist.css */
+.FoodList-container {
+  Font-family: Georgia, serif;
+  padding: 20px;
+  background-color: #1B2625;
+  color: #fff;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.FoodList-container h1{
+  padding: 20px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 90px;
+  text-align: center;
+}
+
+.FoodList-display {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/*//////////////////////////////////*/
+/*BUTTONS*/
+/*//////////////////////////////////*/
+.FoodList-create-foodlist-btn{
+  background-color: #28a745; 
+  font-size: 30px;
+  margin: 20px;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.FoodList-create-foodlist-btn:hover {
+  background-color: #218838;
+}
+
+/*//////////////////////////////////*/
+/*FOODLIST CARD OVERALL*/
+/*//////////////////////////////////*/
+.FoodList-box {
+  width: auto; 
+  min-width: 300px;
+  max-width: 700px;
+  height: auto;
+  min-height: 500px;
+  max-height: 900px;  
+  margin: 20px; 
+  background-color: #010b11; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+  align-items: center; 
+  padding: 1rem;
+  height: 100%;
+  width: calc(20% - 1rem); 
+  margin-bottom: 2rem; 
+  text-align: center;
+  border: 3px solid #E2C274; 
+  border-radius: 10px; 
+}
+/*//////////////////////////////////*/
+/*FOODLIST CARD BUTTON FORMAT*/
+/*//////////////////////////////////*/
+.FoodList-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 100%; /* Stretch buttons across the card width */
+  flex-direction: column;
+  gap: 20px;
+}
+.FoodList-box h3{
+  font-size: 35px;
+  margin-bottom: 3rem;
+  height: 3rem;
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex-direction: column; 
+  justify-content: center
+}
+/*//////////////////////////////////*/
+/*FOODLIST CARD VIEW*/
+/*//////////////////////////////////*/
+.FoodList-view-foodlist-btn {
+  background-color: #28a745; 
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.FoodList-view-foodlist-btn:hover {
+  background-color: #31c451;
+}
+
+/*//////////////////////////////////*/
+/*RECIPE CARD DESCRIPTION*/
+/*//////////////////////////////////*/
+.foodlist-description{
+  font-size: 17px;
+  color: white;
+  background: #1c1c1c; 
+  border: 3px solid #9cA8B5; 
+  border-radius: 10px; 
+  padding: 30px;
+  cursor: pointer;
+  width: 80%; 
+  justify-content: center;
+  margin: 0 auto; 
+}
+.foodlist-description:hover {
+  background-color: rgb(63, 63, 63);
+}
+/*//////////////////////////////////*/
+/*FOODLIST CARD EDIT*/
+/*//////////////////////////////////*/
+.FoodList-edit-foodlist-btn {
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #e6bd44;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.FoodList-edit-foodlist-btn:hover {
+  background-color: #f3de9f;
+}
+
+/*//////////////////////////////////*/
+/*FOODLIST CARD DELETE*/
+/*//////////////////////////////////*/
+.FoodList-delete-foodlist-btn {
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #DC3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.FoodList-delete-foodlist-btn:hover {
+  background-color: rgb(244, 52, 71);
+}

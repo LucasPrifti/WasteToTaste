@@ -1,0 +1,564 @@
+/* RecipeDetails.css */
+
+/*////////////////////////////////////*/
+/* Global Page Styles */
+/*////////////////////////////////////*/
+.RecipeDetailPage {
+  background-color: #1B2625;
+  color: white; 
+  Font-family: Georgia, serif;
+  height: 100%;
+  width: 100%;
+}
+
+/*////////////////////////////////////*/
+/* NOTIFICATION POP-UP*/
+/*////////////////////////////////////*/
+.recipe-details-notification-container {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border: 1px solid #CEB174;
+  border-radius: 8px;
+  z-index: 1000; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.recipe-details-notification-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #CEB174;
+  color: #1E1F20;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+
+
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*VIEW RECIPES PAGE*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* Title and Edit Button Container Styles */
+.recipe-details-view-title-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid #CEB174;
+  border-radius: 5px;}
+  
+/*Creadcrumb Feature*/
+.recipe-details-view-mini-breadcrumb{
+  cursor: pointer; 
+  font-weight: bold; 
+  transition: background-color 0.3s; 
+  font-size:20px;
+}
+/*RECIPE TITLE*/
+.recipe-details-view-title-container h2 {
+  color: white; 
+  margin: 0; 
+  font-size:60px;
+  text-align: center;
+}
+
+/* DESCRIPTION*/
+.recipe-details-view-description {
+  width: 70%;
+  font-size: 25px; 
+  min-height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid #CEB174;
+  background-color: #010b11;
+  color: white;
+  border-radius: 5px;
+  resize: vertical;
+  align-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* EDIT BUTTON*/
+.recipe-details-view-edit-button {
+  background-color: #CEB174; 
+  color: White; 
+  border: 2px solid white; 
+  padding: 30px 35px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  font-weight: bold; 
+  transition: background-color 0.3s; 
+  font-size:30px;
+  margin-left: auto;
+  display: block;
+}
+.recipe-details-view-edit-button:hover {
+  background-color: #ffffff; 
+}
+
+/* TAGS*/
+.recipe-details-view-tags-container,
+.recipe-details-view-tag {
+  font-size: 25px;
+  background-color: #010b11; 
+  border: 2px solid #CEB174; 
+  font-weight: bold;
+  padding: 15px; 
+  border-radius: 5px;
+  display: flex; 
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-content: center;
+}
+
+/*ALLERGENS*/
+.recipe-details-view-allergens-container {
+  background-color: #010b11; 
+  border: 2px solid #CEB174; 
+  font-weight: bold;
+  border-radius: 5px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.recipe-details-view-allergens-list li {
+  font-size: 25px;
+  background-color: #010b11; 
+  border: 2px solid #d9534f; 
+  margin-bottom: 5px; 
+  padding: 5px; 
+  border-radius: 5px;
+  color: white;  
+  width: 200px;
+
+}
+/*ALLERGENS TITLE*/
+/*Ingredients title */
+/* Instructions title */
+.recipe-details-view-allergens-list h3{
+  font-size: 45px; 
+  font-weight: bold; 
+  color: white;
+  text-align: center;
+}
+
+/*INSTRUCTIONS/INGREDIENTS*/
+/*Ingredients title */
+/* Instructions title */
+.recipe-details-view-ingredients-list h3,
+.recipe-details-view-instructions-list h3 {
+  font-size: 45px; 
+  font-weight: bold; 
+  color: white;
+  padding-left: 30px;
+}
+
+.recipe-details-view-ingredients-container{
+  background-color: #010b11; 
+  border: 2px solid #CEB174; 
+  font-weight: bold;
+  border-radius: 5px;
+  align-content: center;
+  max-width: 100%;
+} 
+.recipe-details-view-instructions-container {
+  background-color: #010b11; 
+  border: 2px solid #CEB174; 
+  font-weight: bold;
+  border-radius: 5px;
+  align-content: center;
+  border-bottom: 5px white;
+}
+/* Ingredients/Instructions LIST */
+.recipe-details-view-ingredients-list li{
+  background-color: #1c1c1c; 
+  border: 2px solid #CEB174; 
+  margin-bottom: 10px; 
+  padding: 10px; 
+  border-radius: 5px;
+  font-size:30px;
+  justify-content: left;
+  min-width: 50%;
+  max-width: 100%;
+  margin-bottom: 30px;
+
+}
+.recipe-details-view-instructions-list li {
+  background-color: #1c1c1c; 
+  border: 2px solid #CEB174; 
+  margin-bottom: 10px;
+  padding: 10px; 
+  border-radius: 5px;
+  font-size:30px;
+  justify-content: left;
+  min-width: 50%;
+  max-width: 100%;
+  margin-bottom: 30px;
+
+}
+/*INGREDIENTS LIST */
+.recipe-details-view-ingredients-list ol {
+  list-style-type: disc; 
+  padding-left: 40px; 
+  
+}
+/*INSTRUCTIONS LIST */
+.recipe-details-view-instructions-list ol {
+  list-style-type: decimal; 
+  padding-left: 55px;
+}
+
+/* CHECKED ITEMS */
+.checked {
+  text-decoration: line-through;
+  text-decoration-color: #CEB174;
+  text-decoration-thickness: 4px;
+  color: white; 
+}
+
+/*VIDEO*/
+.recipe-details-view-video-container {
+  background-color: #010b11; 
+  border: 2px solid #CEB174; 
+  padding: 10px; 
+  border-radius: 5px;
+  font-size: 30px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: auto; 
+  width: 100%; 
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*EDIT RECIPES PAGE*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* Title */
+.recipe-details-edit-title-input {
+  width: 50%; 
+  padding: 15px 10px; 
+  font-size: 60px; 
+  margin: 20px; 
+  border-radius: 5px; 
+  border: 1px solid #CEB174; 
+}
+
+/* Confirmation */
+.recipe-details-edit-confirm-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.recipe-details-edit-confirm-popup {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 40px;
+  background: #2E2F31;
+  border-radius: 5px;
+  border: 3px solid #CEB174;
+  font-size: 40px;
+  font-weight: bold;
+} 
+.recipe-details-edit-confirm-popup button{
+  padding: 10px 20px;
+  margin: 0 22px; 
+  cursor: pointer; 
+  border-radius: 5px;
+  border: 3px solid #CEB174;
+  font-size: 25px;
+  align-items: center;
+  margin-bottom: 15px;
+} 
+.recipe-details-edit-confirm-delete-btn {
+  background-color: #ff0800; 
+  color: white;
+}
+.recipe-details-edit-cancel-btn{
+  background-color: #010b11; 
+  color: white;
+}
+
+/* Save/Delete Button Styles*/
+.recipe-details-edit-save-button {
+  background-color: #CEB174; /* Gold background color */
+  color: #1E1F20; /* Text color */
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: auto; /*will push the button far right*/
+  font-size: 35px;
+  margin: 20px; 
+  margin-right: 5px;
+}
+.recipe-details-edit-save-button:hover {
+  background-color: #ffffff;
+}
+.recipe-details-edit-delete-button {
+  background-color: #d9534f; 
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px; /*maintain close margin to the save-button*/
+  font-size:35px;
+  margin: 20px; 
+}
+.recipe-details-edit-delete-button:hover {
+  background-color: #ff0800;
+}
+
+
+/*INGREDIENT/INSTRUCTION TITLE*/
+.recipe-details-edit-edit-details-container
+{background-color: #010b11; 
+  margin-bottom: 10px; 
+  padding: 10px; 
+  border: 3px solid #CEB174;
+  border-radius: 5px;
+  font-size:40px;
+}
+/*INGREDIENT/INSTRUCTION INPUT FIELD */
+.recipe-details-edit-ingredient-edit-field,
+.recipe-details-edit-instruction-edit-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+  resize: vertical;
+}
+.recipe-details-edit-ingredient-edit-field input,
+.recipe-details-edit-instruction-edit-field input {
+  padding: 5px;
+  margin-bottom: 5px; 
+  font-size:35px;
+  border-radius: 5px;
+  resize: vertical;
+}
+.recipe-details-edit-ingredient-edit-field button,
+.recipe-details-edit-instruction-edit-field button {
+  width: 200px;
+  background-color: #ff4d4d; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px; 
+  margin-bottom: 20px; 
+}
+/* Ingredient Add button */
+.recipe-details-edit-add-ingredient-button {
+  padding: 10px 15px; 
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-bottom: 20px; 
+}
+/* Instruction Add button */
+.recipe-details-edit-add-instruction-button {
+  padding: 10px 15px; 
+  font-size: 30px;
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-bottom: 20px; 
+}
+
+/* DESCRIPTION TITLE */
+.recipe-details-edit-description-edit-container{
+  width: auto;
+  font-size: 20px; 
+  min-height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid #CEB174;
+  background-color: #010b11;
+  color: white;
+  border-radius: 5px;
+  resize: vertical;
+}
+.recipe-details-edit-recipe-description-edit {/* DESCRIPTION INPUT*/
+  width: 70%;
+  font-size: 20px; 
+  min-height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #CEB174;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+
+/* Tag input field */
+.recipe-details-edit-tags-edit-container h1{
+font-size: 40px;
+}
+
+.recipe-details-edit-tags-edit-container {
+  flex-direction: column;
+  background-color: #010b11;
+  border: 1px solid #CEB174;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: flex-start; 
+  gap: 10px;
+}
+.recipe-details-edit-tags-item{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 400px; 
+  background-color: #010b11;
+  border: 1px solid #CEB174;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+.recipe-details-edit-tags-name{
+  font-size: 24px; 
+  margin-right: 10px; 
+}
+.recipe-details-edit-tags-edit-container button {
+  padding: 5px 10px;
+  font-size: 24px; 
+  margin: 5px 0; 
+  background-color: #d9534f; 
+  color: white; 
+  border-radius: 4px; 
+  border: none; 
+  cursor: pointer; 
+  width: 150px;
+  font-weight: bold;
+}
+.recipe-details-edit-tags-edit-container button:hover {
+  background-color: #eb0800; 
+}
+.recipe-details-edit-tags-edit-container select {
+  font-size: 20px; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0); 
+  border: 1px solid #CEB174; 
+  border-radius: 5px; 
+}
+.recipe-details-edit-tags-edit-container select option {
+  font-size: 20px; 
+  padding: 10px; 
+}
+
+/*Allergen EDIT */
+.recipe-details-edit-allergens-edit-container {
+  flex-direction: column;
+  background-color: #010b11;
+  border: 1px solid #CEB174;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 30px;
+  display: flex;
+  align-items: flex-start; 
+  gap: 10px;
+}
+.recipe-details-edit-allergens-edit-container h3{
+  font-size: 45px;
+  margin: 10px;
+}
+.recipe-details-edit-allergens-checkbox{
+  font-size: 45px;
+  margin: 10px;
+}
+
+/*YOUTUBE URL EDIT */
+.recipe-details-edit-video-container h3{
+  font-size: 45px;
+  margin-bottom: 0;
+}
+.recipe-details-edit-video-url-input {
+  font-size: 20px; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0); 
+  border: 1px solid #CEB174; 
+  border-radius: 5px; 
+}
+@media (max-width: 768px) {
+  .recipe-details-view-tags-container {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .recipe-details-view-description {
+    width: 100%; 
+    margin-right: 0; 
+    margin-left: 0; 
+  }
+
+  .recipe-details-view-edit-button {
+    margin-top: 20px; 
+    width: auto; 
+  }
+  
+
+  .recipe-details-view-title-container h2 {
+    font-size: 40px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-description {
+    font-size: 16px; 
+    max-height: none; 
+  }
+
+}

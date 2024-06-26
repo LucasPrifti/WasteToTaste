@@ -1,0 +1,168 @@
+.recipe-page-container {
+  Font-family: Georgia, serif;
+  background-color: #1B2625;
+  color: #fff;
+  margin: 0;  
+}
+
+/*Make your Menu Header*/
+.recipe-page-header h1 {
+  margin-top: 0;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 90px; 
+}
+
+/*Explore New Creations */
+.recipe-page-explore-button {
+  width: 50%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  border: 6px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #DBB657;
+  cursor: pointer;
+  font-size: clamp(35px, 1vw, 40px);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.recipe-page-explore-button:hover {
+  background-color: #ffb700;
+}
+
+/*Photos and bottom 3 optoins*/
+.recipe-page-recipe-options {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+/*Button Formats*/
+.recipe-page-recipe-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 33.333%; 
+  max-width: 33.333%; 
+  flex-direction: column;
+}
+
+.recipe-page-recipe-item img {
+  width: 100%; 
+  max-width: 100%; 
+  height: auto;
+  display: block; 
+  margin: 0 auto; 
+  margin-bottom: 20px;
+}
+
+
+/*//////////////*/
+/*BUTTON FORMATS*/
+/*//////////////*/
+.View-All-Recipes-Button {
+  padding: 10px 10px;
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.View-All-Recipes-Button:hover {
+  background-color: #ffb700;
+}
+
+
+.Create-New-Recipe-Button {
+  padding: 10px 10px;
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.Create-New-Recipe-Button:hover {
+  background-color: #ffb700;
+}
+
+.FoodList-Button {
+  padding: 10px 10px;
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.FoodList-Button:hover {
+  background-color: #ffb700;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem; 
+  }
+
+  .explore-button {
+    padding: 8px 10px; 
+    font-size: 0.9rem; 
+  }
+  @media (max-width: 768px) {
+    .recipe-page-recipe-options {
+      flex-direction: column;
+    }
+  
+    .recipe-page-recipe-item {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  
+    .recipe-page-recipe-item img {
+      width: 80%;
+      margin-bottom: 10px; 
+    }
+  }
+  .View-All-Recipes-Button,
+  .Create-New-Recipe-Button,
+  .FoodList-Button {
+    padding: 8px 10px; 
+    font-size: 0.9rem;
+    width: 80%; 
+  }
+
+  .recipe-page-recipe-options {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .recipe-page-recipe-item img {
+    width: 80%; 
+  }
+
+}

@@ -1,0 +1,195 @@
+/*////////////////////////// */
+/* MAIN BODY */
+/*////////////////////////// */
+.create-recipe-container {
+  margin: 0 auto; 
+  padding: 20px;
+  box-sizing: border-box;
+  border: #CEB174;
+  color: white;
+  border-radius: 8px;
+  background-color: #1B2625;
+  color: white; 
+  Font-family: Georgia, serif;
+  height: 100%;
+  width: 100%;
+  text-transform: none; 
+}
+/*////////////////////////// */
+/* PAGE TITLE */
+/*////////////////////////// */
+.create-recipe-container h1 {
+  color: white; 
+  font-weight: bold;
+  font-size: 90px;
+  margin: 20px;
+}
+.create-recipe-container h4 {
+  color: white; 
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+}
+
+
+/*////////////////////////// */
+/* NOTIFICATION POP-UP*/
+/*////////////////////////// */
+.create-recipe-notification-container {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+  background-color: #1E1F20;
+  color: white;
+  padding: 20px;
+  border: 4px solid #CEB174;
+  border-radius: 8px;
+  z-index: 1000; 
+  text-align: center;
+}
+
+
+/*////////////////////////// */
+/* INPUT FIELD TITLES */
+/*////////////////////////// */
+.create-recipe-container h2, 
+.create-recipe-container h3 {
+  color: #CEB174; 
+  font-weight: bold;
+  font-size: 55px;
+  padding-top: 5%;
+  margin: 0px;
+}
+
+/*////////////////////////// */
+/*DESCRIPTION/YOUTUBE TEXTBOX*/
+/*////////////////////////// */
+.create-recipe-container input[type="text"],
+.create-recipe-container textarea,
+.create-recipe-container button {
+  width: 60%; 
+  box-sizing: border-box; 
+}
+/*////////////////////////// */
+/*DESCRIPTION/YOUTUBE BOX*/
+/*////////////////////////// */
+.create-recipe-container input[type="text"],
+.create-recipe-container textarea {
+  background-color: #1E1F20;
+  border: 1px solid #CEB174;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+
+/*////////////////////////// */
+/* ADD/SAVE BUTTON */
+/*////////////////////////// */
+.create-recipe-container button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  transition: background-color 0s;
+  border-radius: 5px; 
+}
+
+
+/*////////////////////////// */
+/* TAGS CONTAINER/BUTTONS*/
+/*////////////////////////// */
+
+.create-recipe-tags-container {
+  flex-direction: column;
+  background-color: #010b11;
+  border: 1px solid #CEB174;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start; 
+  gap: 10px;
+  width: 500px; 
+}
+.create-recipe-tag-item {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 400px; 
+  background-color: #010b11;
+  border: 1px solid #CEB174;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 24px; 
+  font-weight: bold;
+}
+.create-recipe-tag-item button {
+  padding: 5px 10px;
+  font-size: 24px; 
+  width: 150px;
+  margin: 5px 0; 
+  background-color: #d9534f; 
+  color: white; 
+  border-radius: 4px; 
+  border: none; 
+  cursor: pointer; 
+}
+.create-recipe-tag-item button:hover {
+  background-color: #ffb700;
+}
+.create-recipe-tags-container select {
+  font-size: 25px; 
+  height: 50px; 
+  width: 50%;
+  background-color: #1E1F20; 
+  color: white; 
+  border: 1px solid #CEB174; 
+  border-radius: 5px; 
+  margin-bottom: 10px;
+  cursor: pointer; 
+  box-sizing: border-box; 
+}
+/*////////////////////////// */
+/*ALLERGENS BOX*/
+/*////////////////////////// */
+.create-recipe-allergens-list {
+  background-color: #1E1F20;
+  border: 1px solid #CEB174;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  width: 30%; 
+} 
+
+.create-recipe-allergen-item {
+  background-color: #1E1F20;
+  border: 1px solid #CEB174;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 25px;
+  min-width: 40%;
+}
+/* Flex Container Adjustment for Better Responsiveness */
+.create-recipe-ingredient-instruction-container {
+  flex-direction: column; /* Stack on smaller screens */
+}
+
+/* Adjusting for small screen sizes */
+@media (max-width: 768px) {
+  .create-recipe-container {
+      width: 90%;
+  }
+  
+  .create-recipe-ingredient-container,
+  .create-recipe-instruction-container {
+      flex-basis: 100%; /* Full width on smaller screens */
+  }
+}
+

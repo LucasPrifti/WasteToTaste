@@ -1,0 +1,129 @@
+.utilizing-utensils-container {
+  Font-family: Georgia, serif;
+  background-color: #1B2625;
+  color: #fff;
+  margin: 0;  
+}
+
+.utilizing-utensils-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+/*Make your Menu Header*/
+.utilizing-utensils-header h1 {
+  margin-top: 0;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-size: 90px; 
+  flex-grow: 1; 
+}
+/*Photos and bottom 3 optoins*/
+.utilizing-utensils-options {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+/*Button Formats*/
+.utilizing-utensils-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 33.333%; 
+  max-width: 33.333%; 
+  flex-direction: column;
+}
+
+.utilizing-utensils-item img {
+  width: 125%; 
+  max-width: 125%; 
+  height: auto;
+  display: block; 
+  margin-right: 1.5em  !important;
+  margin-bottom: 20px;
+}
+
+/*//////////////////*/
+/*KNIVES*/
+/*//////////////////*/
+.knives-Button {
+  padding: 10px 10px;
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.knives-Button:hover {
+  background-color: #ffb700;
+}
+/*/////////////*/
+/*VARIOUS TOOLS*/
+/*/////////////*/
+.various-tools-Button {
+  padding: 10px 10px;
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.various-tools-Button:hover {
+  background-color: #ffb700;
+}
+/*/////////////////*/
+/*CUTTING BOARD*/
+/*/////////////////*/
+.cutting-board-Button {
+  padding: 10px 10px;
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.cutting-board-Button:hover {
+  background-color: #ffb700;
+}
+
+@media (max-width: 768px) {
+  .utilizing-utensils-item {
+    flex-basis: 100%; /* Each item takes full width on smaller screens */
+    max-width: 100%; /* Aligns with flex-basis for consistency */
+  }
+
+
+  /* Adjust button width to be responsive and not fixed */
+  .knives-Button,
+  .various-tools-Button,
+  .cutting-board-Button {
+    width: 80%; /* Example width, adjust as necessary */
+    margin: 10px auto; /* Center buttons with margin */
+  }
+}

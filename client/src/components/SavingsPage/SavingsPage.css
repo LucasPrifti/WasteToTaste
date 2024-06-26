@@ -1,0 +1,99 @@
+.savings-page-container {
+  Font-family: Georgia, serif;
+  background-color: #1B2625;
+  color: #fff;
+  margin: 0;  
+}
+
+/*Make your Menu Header*/
+.savings-page-header h1 {
+  margin-top: 0;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 90px; 
+}
+/*Photos and bottom 3 optoins*/
+.savings-page-options {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+/*Button Formats*/
+.savings-page-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%; 
+  max-width: 50%; 
+  flex-direction: column;
+}
+
+.savings-page-item img {
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  display: block; 
+  margin-right: 85px;
+  margin-bottom: 20px;
+}
+
+/*/////////*/
+/*SPENDINGS*/
+/*/////////*/
+.Spending-Button {
+  padding: 10px 10px;
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(35px, 1vw, 45px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.Spending-Button:hover {
+  background-color: #ffb700;
+}
+/*/////////////*/
+/*STORAGE*/
+/*/////////////*/
+.Storage-Button {
+  padding: 10px 10px;
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(35px, 1vw, 45px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.Storage-Button:hover {
+  background-color: #ffb700;
+}
+
+@media (max-width: 768px) {
+  .savings-page-item{
+    flex-basis: 100%; /* Each item takes full width on smaller screens */
+    max-width: 100%; /* Aligns with flex-basis for consistency */
+  }
+
+  .technique-page-item img {
+  }
+
+  /* Adjust button width to be responsive and not fixed */
+  .Spending-Button,
+  .Storage-Button {
+    width: 80%; /* Example width, adjust as necessary */
+    margin: 10px auto; /* Center buttons with margin */
+  }
+}

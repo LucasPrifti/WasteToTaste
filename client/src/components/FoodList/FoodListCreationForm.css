@@ -1,0 +1,120 @@
+/*FoodlistCreationForm.css */
+.FoodListCreationForm-container {
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 20px;
+  box-sizing: border-box;
+  border: #CEB174;
+  color: white;
+  border-radius: 8px;
+  background-color: #1B2625;
+  color: white; 
+  Font-family: Georgia, serif;
+  height: 100%;
+  width: 100%;
+  text-transform: none; 
+}
+.FoodListCreationForm-container h1 {
+  color: white; 
+  font-weight: bold;
+  font-size: 90px;
+  margin: 30px;
+}
+
+.FoodListCreationForm-container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 30px;
+}
+.FoodListCreationForm-container-form h3{
+  color: white; 
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 5%;
+  margin: 0px;
+}
+
+.FoodListCreationForm-container-form input[type="text"],
+.FoodListCreationForm-container-form input[type="search"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 40px;
+  Width: 60%;
+  border: 3px solid #FFDA43;
+}
+
+.FoodListCreationForm-recipe-selection label {
+  display: flex;
+  align-items: center; 
+  margin: 5px 0;
+  font-size: 35px;
+  cursor: pointer;
+}
+.FoodListCreationForm-recipe-selection ol {
+  background-color: #1E1F20;
+  border: 1px solid #CEB174;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 25px;
+  width: 100%;
+  box-sizing: border-box; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.FoodListCreationForm-container-form input[type="text"],
+.FoodListCreationForm-container-form input[type="search"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 40px;
+  Width: 60%;
+  border: 3px solid #FFDA43;
+}
+
+.FoodListCreationForm-recipe-selection input[type="checkbox"] {
+  margin-right: 10px; 
+}
+.FoodListCreationForm-recipe-selection label span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: calc(100% - 40px); 
+}
+
+.FoodListCreationForm-description{
+  background-color: #1E1F20;
+  border: 1px solid #CEB174;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+select {
+  cursor: pointer;
+}
+
+.FoodListCreationForm-create-foodlist button{
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0s;
+  border-radius: 5px; 
+}
+
+select[multiple] {
+  height: auto;
+  min-height: 100px;
+}
+
+::placeholder {
+  color: #aaa;
+}

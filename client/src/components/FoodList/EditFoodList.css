@@ -1,0 +1,94 @@
+/*EditFoodlist.css */
+.FoodListCreationEdit-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
+  background-color: #1B2625;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #fff;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.foodlist-edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+  width: 100%; 
+  gap: 20px;
+  max-width: 500px; 
+}
+
+.FoodListCreationEdit-container h1{
+  color: white; 
+  font-weight: bold;
+  font-size: 90px;
+  margin: 30px;
+}
+
+
+
+.FoodListCreationEdit-container form input,
+.FoodListCreationEdit-container form textarea {
+  padding: 15px; 
+  border-radius: 5px;
+  border: 4px solid #E2C274; 
+  font-size: 30px; 
+  margin-bottom: 10px; 
+}
+
+.FoodListCreationSearch-container{
+  background-color: #28a745; 
+  font-size: 30px;
+  margin: 20px;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
+.create-foodlist-btn:hover {
+  background-color: #218838;
+}
+
+.FoodListCreationEdit-recipe-selection {
+  font-weight: bold;
+  font-size: 30px; 
+  background-color: #010b11; 
+  border: 3px solid #E2C274; 
+  border-radius: 10px; 
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  align-items: flex-start; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.FoodListCreationEdit-description-selection{
+  font-size: 25px;
+}
+
+.FoodListCreationEdit-container button {
+  padding: 15px 30px; 
+  font-size: 20px; 
+  margin-top: 20px; 
+  display: inline-block;
+  background: #218838;
+  color: white;
+  margin: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}

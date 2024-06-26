@@ -1,0 +1,177 @@
+/* NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b2526;
+  color: #fff;
+  padding: 2.2rem 1rem; /* Increased padding to make navbar taller */
+  border-bottom: 3px solid #CEB174;
+  border-top: 1px solid #CEB174;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  flex-grow: 1; /* Allows the menu to take up available space pushing the auth button to the edge */
+  gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+.menu a,
+.auth-buttons button {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 1px solid #CEB174;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  transition: color 0.1s, background-color 0.1s, border-color 0.1s;
+}
+.menu a, .menu button {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 1px solid #CEB174;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  transition: color 0.1s, background-color 0.1s, border-color 0.1s;
+  position: relative;
+  }
+
+.menu a:hover, .menu button:hover {
+  color: #000;
+  background-color: #E2C274;
+  border-color: #E2C274;
+}
+
+.menu a:hover,
+.auth-buttons button:hover {
+  color: #000;
+  background-color: #E2C274;
+  border-color: #CEB174;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center; /* Ensure buttons within this div are vertically aligned */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+
+  .menu a,
+  .auth-buttons button,
+  .menu button{
+    padding: 0.5rem;
+    font-size: 18px;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .menu a,
+  .auth-buttons button,
+  .menu button{
+    padding: 0.5rem;
+    font-size: 14px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding-top: 1rem; /* Increase top padding for better spacing in column layout */
+    padding-bottom: 1rem; /* Increase bottom padding for better spacing */
+  }
+
+  .menu,
+  .auth-buttons,
+  .menu button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+}
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .menu, .auth-buttons, .menu button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu a, .auth-buttons button, .menu button {
+    padding: 0.5rem;
+    font-size: 14px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    justify-content: center;
+  }
+  .menu a, .auth-buttons button, .menu button {
+    padding: 0.5rem;
+    font-size: 14px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .menu a, .auth-buttons button, .menu button {
+    padding: 0.5rem;
+    font-size: 16px;
+    justify-content: center;
+  }
+}
+@media (min-width: 770px) and (max-width: 788px) {
+  .menu a, .auth-buttons button, .menu button {
+    padding: 0.5rem; 
+    font-size: 15px; 
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .menu a, .auth-buttons button, .menu button {
+    padding: 0.75rem;
+    font-size: 18px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1366px) {
+  .menu a, .auth-buttons button, .menu button {
+    padding: 1rem;
+    font-size: 20px;
+    justify-content: center;
+  }
+}

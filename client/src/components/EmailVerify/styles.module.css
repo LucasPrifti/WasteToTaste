@@ -1,0 +1,58 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* Add padding to ensure content doesn't touch the edges */
+    box-sizing: border-box; /* Include padding in the width and height calculations */
+}
+h1{
+    border: none;
+    outline: none;
+    padding: clamp(5px, 1vw, 20px); /* Provides a more responsive and gradual adjustment */
+    background-color: #1b2625;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: clamp(18px, 2vw, 25px); /* Ensures text size increases smoothly as the screen widens */
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    width: auto;
+    min-width: 150px; /* Dynamic width */
+}
+.green_btn:hover {
+    background-color: #006900;
+}
+
+.green_btn {
+    border: none;
+    outline: none;
+    padding: clamp(5px, 1vw, 20px); /* Provides a more responsive and gradual adjustment */
+    background-color: #02490a;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: clamp(14px, 1.5vw, 16px); /* Ensures text size increases smoothly as the screen widens */
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    width: auto;
+    min-width: 150px; /* Dynamic width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Reduce padding on very small screens */
+    }
+
+    .green_btn {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: clamp(12px, 4vw, 14px); /* Adjust font size for very small screens */
+    }
+}

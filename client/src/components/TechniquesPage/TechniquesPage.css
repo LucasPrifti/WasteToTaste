@@ -1,0 +1,125 @@
+.technique-page-container {
+  Font-family: Georgia, serif;
+  background-color: #1B2625;
+  color: #fff;
+  margin: 0;  
+}
+
+/*Make your Menu Header*/
+.technique-page-header h1 {
+  margin-top: 0;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 90px; 
+}
+
+/*Photos and bottom 3 optoins*/
+.technique-page-options {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+/*Button Formats*/
+.technique-page-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 33.333%; 
+  max-width: 33.333%; 
+  flex-direction: column;
+}
+
+.technique-page-item img {
+  width: 125%; 
+  max-width: 125%; 
+  height: auto;
+  display: block; 
+  margin-right: 4em  !important;
+  margin-bottom: 20px;
+
+
+}
+
+/*//////////////////*/
+/*UTILIZING UTENSILS*/
+/*//////////////////*/
+.Utilizing-Utensils-Button {
+  padding: clamp(15px, 1vw, 30px);
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.Utilizing-Utensils-Button:hover {
+  background-color: #ffb700;
+}
+/*/////////////*/
+/*POTS AND PANS*/
+/*/////////////*/
+.Pots-and-Pans-Button {
+  padding: clamp(15px, 1vw, 30px);
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.Pots-and-Pans-Button:hover {
+  background-color: #ffb700;
+}
+/*/////////////////*/
+/*PROPER PROCEDURES*/
+/*/////////////////*/
+.Proper-Procedures-Button {
+  padding: clamp(15px, 1vw, 30px);
+  background-color: #DBB657;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(20px, 1vw, 40px);
+  font-weight: bold;
+  border: 6px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 65%;
+}
+.Proper-Procedures-Button:hover {
+  background-color: #ffb700;
+}
+
+
+@media (max-width: 768px) {
+  .technique-page-item {
+    flex-basis: 100%; /* Each item takes full width on smaller screens */
+    max-width: 100%; /* Aligns with flex-basis for consistency */
+  }
+
+  .technique-page-item img {
+  }
+
+  /* Adjust button width to be responsive and not fixed */
+  .Utilizing-Utensils-Button,
+  .Pots-and-Pans-Button,
+  .Proper-Procedures-Button {
+    width: 80%; /* Example width, adjust as necessary */
+    margin: 10px auto; /* Center buttons with margin */
+    margin-bottom: 40px;
+  }
+}
